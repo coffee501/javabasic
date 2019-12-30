@@ -27,7 +27,7 @@ public class CreateThread {
 	}
 
 	/**
-	 *	   ¼Ì³ÐThread
+	 *	   ï¿½Ì³ï¿½Thread
 	 * @author Administrator
 	 *
 	 */
@@ -39,7 +39,7 @@ public class CreateThread {
 	}
 
 	/**
-	 * 	ÊµÏÖRunnable
+	 * 	Êµï¿½ï¿½Runnable
 	 * @author Administrator
 	 *
 	 */
@@ -55,7 +55,6 @@ public class CreateThread {
 		@Override
 		public String call() throws Exception {
 			System.out.println("impl Callable");
-			int c = 1/0;
 			return "impl Callable";
 		}
 
