@@ -2,7 +2,7 @@ package _thread.lock;
 
 import java.util.concurrent.Semaphore;
 /**
- * å¯ä»¥æ§åˆ¶çº¿ç¨‹çš„æ•°é‡
+ * ¿ÉÒÔ¿ØÖÆÏß³ÌµÄÊıÁ¿
  * @author Administrator
  *
  */
@@ -23,16 +23,16 @@ public class SemaphoreTest {
 		@Override
 		public void run() {
 			try {
-				// è·å–é”
+				// »ñÈ¡Ëø
 				semaphore.acquire();
-				System.out.println("è·å–ä¸€ä¸ªé”" + Thread.currentThread().getName());
+				System.out.println("»ñÈ¡Ò»¸öËø" + Thread.currentThread().getName());
 				Thread.sleep(1000);
 			} catch (Exception e) {
 				e.getMessage();
 			} finally {
-				// é‡Šæ”¾é”
+				// ÊÍ·ÅËø
 				semaphore.release();
-				System.out.println("é‡Šæ”¾ä¸€ä¸ªé”" + Thread.currentThread().getName());
+				System.out.println("ÊÍ·ÅÒ»¸öËø" + Thread.currentThread().getName());
 			}
 		}
 	}

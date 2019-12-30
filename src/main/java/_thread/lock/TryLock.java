@@ -3,7 +3,7 @@ package _thread.lock;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 /**
- * tryLock:æœ‰è¿”å›å€¼ã€‚è·å–åˆ°é”ä½trueã€‚å¯è®¾ç½®è·å–é”ç­‰å¾…æ—¶é—´
+ * tryLock:ÓĞ·µ»ØÖµ¡£»ñÈ¡µ½ËøÎ»true¡£¿ÉÉèÖÃ»ñÈ¡ËøµÈ´ıÊ±¼ä
  * @author Administrator
  *
  */
@@ -22,10 +22,10 @@ public class TryLock {
 			try {
 				if (tryLock.tryLock(2500, TimeUnit.MILLISECONDS)) {
 					System.out.println(
-							"è·å–åˆ°é”æˆåŠŸ" + Thread.currentThread().getName());
+							"»ñÈ¡µ½Ëø³É¹¦" + Thread.currentThread().getName());
 				} else {
 					System.out.println(
-							"è·å–é”å¤±è´¥" + Thread.currentThread().getName());
+							"»ñÈ¡ËøÊ§°Ü" + Thread.currentThread().getName());
 				}
 				Thread.sleep(2000);
 			} catch (Exception e) {

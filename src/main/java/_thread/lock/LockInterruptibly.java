@@ -2,7 +2,7 @@ package _thread.lock;
 
 import java.util.concurrent.locks.ReentrantLock;
 /**
- * lockInterruptiblyï¼šå…è®¸å…¶ä»–çº¿ç¨‹è®¾ç½®ä¸­æ–­
+ * lockInterruptibly£ºÔÊĞíÆäËûÏß³ÌÉèÖÃÖĞ¶Ï
  * @author Administrator
  *
  */
@@ -20,12 +20,12 @@ public class LockInterruptibly {
 		@Override
 		public void run() {
 			try {
-				System.out.println("è¿›å…¥çº¿ç¨‹" + Thread.currentThread().getName());
+				System.out.println("½øÈëÏß³Ì" + Thread.currentThread().getName());
 				interruptLock.lockInterruptibly();
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			} finally {
-				System.out.println("é€€å‡ºçº¿ç¨‹" + Thread.currentThread().getName());
+				System.out.println("ÍË³öÏß³Ì" + Thread.currentThread().getName());
 			}
 		}
 	}
